@@ -1,19 +1,24 @@
 {
-  "name": "resttest",
+  "name": "winpacman",
   "version": "1.0.0",
-  "description": "This builds a docker image based on Microsoft Windows Nano Server and containing Node.js.  The docker image _only_ intalls Node.js and NPM, and adds the install folder to the system path.  There is no additional Windows coniguration (i.e. IIS, firewalls, dns, etc.). The purpose of this image is to allow developers to deploy Node.js applications in environments where a Windows-based system is required or preferred over a Linux distro.  The resulting image (and containers) requires Docker to be installed in a Windows environment or Windows Container services to be enabled.",
+  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "restify": "^6.3.4",
+    "serve-static-restify": "^2.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/a11smiles/docker-nano-nodejs.git"
+    "url": "git+https://github.com/glennswest/winpacman.git"
   },
-  "author": "",
+  "author": "glenn s west",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/a11smiles/docker-nano-nodejs/issues"
+    "url": "https://github.com/glennswest/winpacman/issues"
   },
-  "homepage": "https://github.com/a11smiles/docker-nano-nodejs#readme"
+  "homepage": "https://github.com/glennswest/winpacman#readme"
 }

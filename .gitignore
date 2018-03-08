@@ -1,3 +1,4 @@
-node.msi
-/nodejs
 node_modules/*
+nodejs/*
+node.msi
+

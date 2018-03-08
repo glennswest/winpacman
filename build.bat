@@ -12,8 +12,5 @@ echo Building docker image...
 docker build -t glennswest/winpacman:latest .
 docker push glennswest/winpacman:latest
 
-echo Cleaning up...
-rmdir /s /q nodejs
-del node.msi
 
 echo Done.
