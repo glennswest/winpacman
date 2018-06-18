@@ -1,0 +1,11 @@
+apiVersion: v1
+ kind: Pod
+ metadata:
+   name: winpacman
+ spec:
+   containers:
+   - name: winpacman-pod
+     image: glennswest/winpacman:latest
+   nodeSelector:
+     beta.kubernetes.io/os: windows
+
