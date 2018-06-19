@@ -9,6 +9,7 @@
             "name": "winpacman"
         },
         "annotations": {
+         "openshift.io/scc": "privileged"
         }
     },
     "spec": {
@@ -36,12 +37,9 @@
         "serviceAccount": "default",
         "nodeName": "winnode01",
         "securityContext": {
-        },
-        "imagePullSecrets": [
-            {
-                "name": "default-dockercfg-ftjsj"
+            "seLinuxOptions": {
             }
-        ],
+        },
         "schedulerName": "default-scheduler"
     },
     "status": {
