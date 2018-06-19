@@ -1,11 +1,51 @@
-apiVersion: v1
- kind: Pod
- metadata:
-   name: winpacman
- spec:
-   containers:
-   - name: winpacman-pod
-     image: glennswest/winpacman:latest
-   nodeSelector:
-     beta.kubernetes.io/os: windows
-
+{
+    "kind": "Pod",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "winpacman",
+        "creationTimestamp": null,
+        "deletionGracePeriodSeconds": 30,
+        "labels": {
+            "name": "winpacman"
+        },
+        "annotations": {
+        }
+    },
+    "spec": {
+        "containers": [
+            {
+                "name": "winpacman",
+                "image": "glennswest/winpacman:latest",
+                "ports": [
+                    {
+                        "containerPort": 80,
+                        "protocol": "TCP"
+                    }
+                ],
+                "resources": {},
+                "imagePullPolicy": "Always"
+            }
+        ],
+        "restartPolicy": "Always",
+        "terminationGracePeriodSeconds": 30,
+        "dnsPolicy": "ClusterFirst",
+        "nodeSelector": {
+            "beta.kubernetes.io/os": "windows"
+        },
+        "serviceAccountName": "default",
+        "serviceAccount": "default",
+        "nodeName": "winnode01",
+        "securityContext": {
+        },
+        "imagePullSecrets": [
+            {
+                "name": "default-dockercfg-ftjsj"
+            }
+        ],
+        "schedulerName": "default-scheduler"
+    },
+    "status": {
+        "phase": "Pending",
+        "qosClass": "BestEffort"
+    }
+}
