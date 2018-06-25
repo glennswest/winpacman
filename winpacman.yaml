@@ -10,7 +10,7 @@ spec:
     imagePullPolicy: IfNotPresent
     name: winpacman
     ports:
-    - containerPort: 3000
+    - containerPort: 80
       protocol: TCP
     securityContext:
       privileged: true
