@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "restify": "^6.3.4",
-    "serve-static-restify": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
