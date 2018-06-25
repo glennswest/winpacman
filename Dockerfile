@@ -7,10 +7,11 @@ RUN mkdir \app
 WORKDIR /app
 
 COPY public/ /app/public
+COPY public/* /app/public/
 COPY package.json /app/package.json
 RUN npm install
 COPY index.js /app/index.js
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD [ "npm.cmd", "start" ]
