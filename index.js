@@ -4,5 +4,5 @@ var serveStatic = require('serve-static-restify')
 var app = restify.createServer()
  
 app.pre(serveStatic('public', {'index': ['index.html', 'default.htm']}))
-app.listen(80)
+app.listen(3000)
 

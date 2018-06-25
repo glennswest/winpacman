@@ -1,6 +1,5 @@
 @echo off
 
-docker login hybrid.azurecr.io -u hybrid -p gw35L0FqSowSM25QFY3WdIcUJ+PZCOAR
 
 echo Downloading node.msi...
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri "https://nodejs.org/dist/v6.9.1/node-v6.9.1-x64.msi" -OutFile "./node.msi"
