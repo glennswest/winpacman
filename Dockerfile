@@ -1,5 +1,5 @@
 
-FROM stefanscherer/node-windows:10.2.0-nanoserver-1803
+FROM stefanscherer/node-windows:latest
 MAINTAINER Glenn West <gwest@redhat.com>
 
 # copy nodejs to nanoserver
