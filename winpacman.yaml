@@ -6,7 +6,7 @@ metadata:
   name: winpacman
 spec:
   containers:
-  - image: glennswest/winpacman:latest
+  - image: glennswest/winpacman:1803
     imagePullPolicy: Always
     name: winpacman
     ports:
